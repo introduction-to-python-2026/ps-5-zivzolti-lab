@@ -1,6 +1,5 @@
 from sympy import symbols, Eq, solve
 
-
 ELEMENTS = [
     'H', 'He', 'Li', 'Be', 'B', 'C', 'N', 'O', 'F', 'Ne',
     'Na', 'Mg', 'Al', 'Si', 'P', 'S', 'Cl', 'Ar', 'K', 'Ca',
@@ -40,8 +39,6 @@ def build_equations(reactant_atoms, product_atoms):
 
 
 def my_solve(equations, coefficients):
-    """Solves the system of equations for the coefficients of the reaction.  
-    Example: For equations [2*a0 - 2*b0, a1 - b0], returns [1.0, 1.0]."""
     solution = solve(equations, coefficients)
 
     if len(solution) == len(coefficients):
