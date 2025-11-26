@@ -58,5 +58,5 @@ def count_atoms_in_reaction(molecules_list):
     Example: ['H2', 'O2'] → [{'H': 2}, {'O': 2}]"""
     molecules_atoms_count = []
     for molecule in molecules_list:
-        molecules_atoms_count.append(count_atoms_in_molecule(molecule))
+        molecules_atoms_count.append(count_atoms_in_molecule(formula))
     return molecules_atoms_count
